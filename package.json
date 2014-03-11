@@ -1,0 +1,50 @@
+{
+  "name": "ab-test-service",
+  "version": "0.0.1",
+  "description": "An AngularJS service for creating imperative A/B/n tests in your AngularJS projects.",
+  "keywords": [
+    "angularjs",
+    "ab test",
+    "split test"
+  ],
+  "homepage": "https://github.com/daniellmb/ab-test-service",
+  "author": "Daniel Lamb (http://daniellmb.com)",
+  "maintainers": [
+
+  ],
+  "contributors": [
+
+  ],
+  "bugs": {
+    "url": "https://github.com/daniellmb/ab-test-service/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://daniellmb.mit-license.org"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/daniellmb/ab-test-service.git"
+  },
+  "main": "ab-svc.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "./node_modules/karma/bin/karma start --browsers Firefox --single-run",
+    "gulp": "gulp"
+  },
+  "devDependencies": {
+    "gulp": "latest",
+    "gulp-util": "latest",
+    "gulp-uglify": "latest",
+    "gulp-rename": "latest",
+    "gulp-ngmin": "latest",
+    "karma": "latest",
+    "karma-jasmine": "latest",
+    "karma-firefox-launcher": "latest",
+    "karma-coverage": "latest"
+  }
+}

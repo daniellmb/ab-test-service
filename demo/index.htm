@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html ng-app="demo" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Daniel Lamb">
+  <title>AngularJS A/B Test Service Example</title>
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+
+  <div ng-controller="abTestCtrl">
+    <h1>AngularJS A/B Test Service Example</h1>
+    <p class="lead">This example will run an A/B test when the page loads using a list of seven possible variants.</p>
+    <button id="example" type="button" class="btn btn-lg btn-default" ng-click="go()">
+      <span class="glyphicon glyphicon-star"></span> Star this Repository!
+    </button>
+    <a href="index.htm" class="btn btn-lg btn-default">
+      <span class="glyphicon glyphicon-refresh"></span>
+    </a>
+  </div>
+
+</div>
+
+<script src="../bower_components/angular/angular.js"></script>
+<script src="../bower_components/ab.js/ab.js"></script>
+<script src="../bower_components/ab.js/log.js"></script>
+<script src="../ab-svc.js"></script>
+<script>
+  // create module with ab.test.service dependency
+  var demo = angular.module('demo', ['ab.test.service']);
+
+  // create a/b test service instance
+  demo.factory('ab', function(abMfg) {
+    return abMfg();
+  });
+
+  // use ab test service in a controller
+  demo.controller('abTestCtrl', ['$scope', 'ab', function($scope, ab) {
+    // look up the button element
+    var btn = document.getElementById('example');
+
+    // run a/b test to select css class name
+    var cssClass = ab.test(['default','primary','success','info','warning','danger','link'], 1);
+
+    // update the ui
+    btn.className = 'btn btn-lg btn-' + cssClass;
+
+    // log variant shown (example)
+    //AB.log({shown:cssClass}, "http://www.example.com/log");
+
+    // provide a go button to the repo
+    $scope.go = function () {
+      // log variant chosen & use optional callback to ensure the page is not left before log completes
+      AB.log({chose:cssClass}, "http://www.example.com/log", function(e) {
+
+        // example of checking the event type
+        if (e.type === "error") {
+          // unable to log a/b test results :(
+        } else {
+          // a/b test results logged! :)
+        }
+
+        // continue to the repo
+        location = 'https://github.com/daniellmb/ab-test-service';
+      });
+    }
+  }]);
+</script>
+</body>
+</html>

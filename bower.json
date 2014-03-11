@@ -1,0 +1,12 @@
+{
+  "name": "ab-test-service",
+  "version": "0.0.1",
+  "main": "ab-svc.js",
+  "dependencies": {
+    "angular": "latest",
+    "ab.js": "latest"
+  },
+  "devDependencies": {
+    "angular-mocks": "latest"
+  }
+}
