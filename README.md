@@ -1,4 +1,5 @@
-# ab-test-service [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coveralls Status][coveralls-image]][coveralls-url] [![Dependency Status][depstat-image]][depstat-url]
+# ab-test-service
+[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coveralls Status][coveralls-image]][coveralls-url] [![Dependency Status][depstat-image]][depstat-url]
 
 An AngularJS service for creating imperative A/B/n tests in your AngularJS projects. This service makes no assumptions
 about how your application is set up or how you want to use it. While for most applications a single A/B test service
