@@ -13,13 +13,16 @@ module.exports = function (config) {
       'ab-svc.js': ['coverage']
     },
 
-    reporters: ['progress', 'coverage', 'coveralls'],
+    reporters: ['dots', 'coverage'],
 
     coverageReporter: {
-      type: 'lcov',
-      dir: 'coverage/'
+      reporters: [{
+        type: 'text'
+      }, {
+        type: 'lcov',
+        dir: 'coverage/'
+      }]
     },
-
     port: 9876,
     colors: true,
 
@@ -33,4 +36,9 @@ module.exports = function (config) {
     autoWatch: true,
     singleRun: false
   });
+
+  // have travis publish to coveralls
+  if (process.env.TRAVIS) {
+    config.reporters.push('coveralls');
+  }
 };
