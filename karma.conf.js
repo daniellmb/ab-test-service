@@ -13,7 +13,12 @@ module.exports = function (config) {
       'ab-svc.js': ['coverage']
     },
 
-    reporters: ['progress', 'coverage'],
+    reporters: ['progress', 'coverage', 'coveralls'],
+
+    coverageReporter: {
+      type: 'lcov',
+      dir: 'coverage/'
+    },
 
     port: 9876,
     colors: true,

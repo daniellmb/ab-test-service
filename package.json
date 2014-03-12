@@ -9,12 +9,8 @@
   ],
   "homepage": "https://github.com/daniellmb/ab-test-service",
   "author": "Daniel Lamb (http://daniellmb.com)",
-  "maintainers": [
-
-  ],
-  "contributors": [
-
-  ],
+  "maintainers": [],
+  "contributors": [],
   "bugs": {
     "url": "https://github.com/daniellmb/ab-test-service/issues"
   },
@@ -45,6 +41,7 @@
     "karma": "latest",
     "karma-jasmine": "latest",
     "karma-firefox-launcher": "latest",
-    "karma-coverage": "latest"
+    "karma-coverage": "latest",
+    "karma-coveralls": "latest"
   }
 }
