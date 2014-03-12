@@ -40,7 +40,7 @@ other services anywhere in your application!
 
 ### Using Your A/B Test Service Instance
 
-Building on the example above ([see demo](https://github.com/daniellmb/ab-test-service/demo/index.htm) for full context):
+Building on the example above ([see demo](https://github.com/daniellmb/ab-test-service/blob/master/demo/index.htm) for full context):
 
 ```javascript
 // use ab test service in a controller
