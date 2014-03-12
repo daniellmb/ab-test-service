@@ -119,7 +119,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 [npm-image]: https://badge.fury.io/js/ab-test-service.png
 [travis-url]: https://travis-ci.org/daniellmb/ab-test-service
 [travis-image]: https://travis-ci.org/daniellmb/ab-test-service.png?branch=master
-[coveralls-url]: https://travis-ci.org/daniellmb/ab-test-service
-[coveralls-image]: http://img.shields.io/badge/coverage-100%25-brightgreen.svg
+[coveralls-url]: https://coveralls.io/r/daniellmb/ab-test-service
+[coveralls-image]: https://coveralls.io/repos/daniellmb/ab-test-service/badge.png
 [depstat-url]: https://david-dm.org/daniellmb/ab-test-service
 [depstat-image]: https://david-dm.org/daniellmb/ab-test-service.png?theme=shields.io
