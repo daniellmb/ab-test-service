@@ -33,15 +33,12 @@
     "gulp": "gulp"
   },
   "devDependencies": {
-    "gulp": "latest",
-    "gulp-util": "latest",
-    "gulp-uglify": "latest",
-    "gulp-rename": "latest",
-    "gulp-ngmin": "latest",
-    "karma": "latest",
-    "karma-jasmine": "~0.1.5",
-    "karma-firefox-launcher": "latest",
-    "karma-coverage": "latest",
-    "karma-coveralls": "latest" 
+    "gulp": "~3.5.6",
+    "gulp-ngmin": "~0.1.2",
+    "gulp-rename": "~1.2.0",
+    "gulp-uglify": "0.2.1",
+    "gulp-util": "~2.2.14",
+    "karma": "~0.12.0",
+    "karma-coveralls": "~0.1.2"
   }
 }
