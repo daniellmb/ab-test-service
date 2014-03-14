@@ -81,7 +81,6 @@ describe('ab-svc.js', function () {
 
     describe('the test method', function () {
       it('should should call the ab.js test method', function () {
-        expect(mockAB.test.callCount).toBe(0);
         abSvc.test();
         expect(mockAB.test.callCount).toBe(1);
       });
@@ -93,7 +92,6 @@ describe('ab-svc.js', function () {
 
     describe('the log method', function () {
       it('should should call the ab.js log method', function () {
-        expect(mockAB.log.callCount).toBe(0);
         abSvc.log();
         expect(mockAB.log.callCount).toBe(1);
       });
