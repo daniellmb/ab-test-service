@@ -39,7 +39,7 @@
     "gulp-rename": "latest",
     "gulp-ngmin": "latest",
     "karma": "latest",
-    "karma-jasmine": "latest",
+    "karma-jasmine": "~0.1.5",
     "karma-firefox-launcher": "latest",
     "karma-coverage": "latest",
     "karma-coveralls": "latest" 
