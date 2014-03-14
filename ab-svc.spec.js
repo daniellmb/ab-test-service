@@ -33,10 +33,7 @@ describe('ab-svc.js', function () {
   // Call this before each test, except where you are testing for edge-cases
   function _setup() {
     // Mock the expected values
-    _provide(function (provide) {
-      mockAB = new MockABJS();
-      provide.value('AB', mockAB);
-    });
+    mockAB = new MockABJS();
     // Inject the code under test
     _inject();
   }
@@ -63,7 +60,8 @@ describe('ab-svc.js', function () {
       _setup();
       // create a/b test service
       abSvc = abMfg({
-        scope: {}
+        scope: {},
+        ab: mockAB
       });
     });
 
@@ -81,6 +79,7 @@ describe('ab-svc.js', function () {
 
     describe('the test method', function () {
       it('should should call the ab.js test method', function () {
+        expect(mockAB.test.callCount).toBe(0);
         abSvc.test();
         expect(mockAB.test.callCount).toBe(1);
       });
@@ -92,6 +91,7 @@ describe('ab-svc.js', function () {
 
     describe('the log method', function () {
       it('should should call the ab.js log method', function () {
+        expect(mockAB.log.callCount).toBe(0);
         abSvc.log();
         expect(mockAB.log.callCount).toBe(1);
       });
