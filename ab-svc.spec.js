@@ -114,7 +114,7 @@ describe('ab-svc.js', function () {
         // create a/b test service
         abSvc = abMfg();
       }
-      expect(wrapper).toThrow('ab.js JavaScript library not provided');
+      expect(wrapper).toThrow(new Error('ab.js JavaScript library not provided'));
     });
   });
 });
