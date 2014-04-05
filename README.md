@@ -1,5 +1,5 @@
 # ab-test-service
-[![Build Status][travis-image]][travis-url] [![Coveralls Status][coveralls-image]][coveralls-url] [![Dependency Status][depstat-image]][depstat-url] [![NPM version][npm-image]][npm-url] 
+[![Build Status][travis-image]][travis-url] [![Coveralls Status][coveralls-image]][coveralls-url] [![Dependency Status][depstat-image]][depstat-url] [![Bower version][bower-image]][bower-url] [![NPM version][npm-image]][npm-url] 
 
 An AngularJS service for creating imperative A/B/n tests in your AngularJS projects. This service makes no assumptions
 about how your application is set up or how you want to use it. While for most applications a single A/B test service
@@ -115,6 +115,8 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 
+[bower-url]: http://bower.io/search/?q=ab-test-service
+[bower-image]: https://badge.fury.io/bo/ab-test-service.png
 [npm-url]: https://npmjs.org/package/ab-test-service
 [npm-image]: https://badge.fury.io/js/ab-test-service.png
 [travis-url]: https://travis-ci.org/daniellmb/ab-test-service
