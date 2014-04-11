@@ -3,10 +3,10 @@
   "version": "0.0.1",
   "main": "ab-svc.js",
   "dependencies": {
-    "angular": "latest",
-    "ab.js": "latest"
+    "ab.js": "latest",
+    "angular": "~1.2.14"
   },
   "devDependencies": {
-    "angular-mocks": "latest"
+    "angular-mocks": "~1.2.14"
   }
 }
